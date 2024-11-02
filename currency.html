@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link rel="stylesheet" href="currency.css">
+
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="currency">
+                <a href="calculator.html">
+                    <div class="cancel">✕</div>
+                </a>
+                <p>Currency Converter</p>
+            </div>
+            <div class="cancels">
+                <div class="split">▢</div>
+            </div>
+        </nav>
+        <div class="input">
+           <input type="number" class="input2" id="input1" placeholder="NGN" disabled>
+           <input type="number" class="input2" id="input2" placeholder="USD" disabled>
+           <input type="number" class="input2" id="input3" placeholder="EURO" disabled>
+        </div>
+        <div class="allkeyboard">
+                <button onclick="clearall()">CE</button>
+                <button onclick="cancel()">CE</button>
+
+                <button onclick="cancel()">x</button>
+                <button onclick="showNumber(8)">7</button>
+                <button onclick="showNumber(9)">8</button>
+                <button onclick="showNumber(4)">9</button>
+                <button onclick="showNumber(5)">4</button>
+                <button onclick="showNumber(6)">5</button>
+                <button onclick="showNumber(1)">6</button>
+                <button onclick="showNumber(2)">1</button>
+                <button onclick="showNumber(3)">2</button>
+                <button onclick="showNumber(0)">3</button>
+                <button onclick="showNumber(0)">0</button>
+                <button onclick="showNumber(0)">0</button>
+                <button onclick="showNumber('.')">.</button>
+        </div>
+    </section>
+    <script>
+        let input1 = document.getElementById("input1")
+        let input2 = document.getElementById("input2")
+        let input3 = document.getElementById("input3")
+        function showNumber(number) {
+            input1.value += number;
+            input2.value += number;
+            input3.value += number;
+        }
+        function clearall(number) {
+            input1.value = '';
+            input2.value = '';
+            input3.value = '';
+        }
+    </script>
+</body>
+</html>

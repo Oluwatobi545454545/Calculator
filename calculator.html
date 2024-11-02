@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+
+<body>
+    <section>
+        <nav>
+            <p>Calculator</p>
+            <div class="cancels">
+                <div class="minimize">–</div>
+                <div class="split">▢</div>
+                <a>
+                    <div class="cancel">✕</div>
+                </a>
+            </div>
+        </nav>
+        <div class="input">
+           <input type="text" class="input1" id="input1" disabled>
+           <input type="text" class="input2" id="input2" placeholder="0" disabled>
+        </div>
+        <div class="mss">
+            <div>MC</div>
+            <div>MR</div>
+            <div>M+</div>
+            <div>M-</div>
+            <div>MS</div>
+            <div>Mv</div>
+        </div>
+        <div class="allkeyboard">
+                <button onclick="operator('%')">%</button>
+                <button onclick="Clearall()">CE</button>
+                <button onclick="clearall()">C</button>
+                <button onclick="cancel()">x</button>
+                <button onclick="operator('1/x')">1/x</button>
+                <button onclick="operator('²')">x²</button>
+                <button onclick="operator('√')">√x</button>
+                <button onclick="operator('÷')">÷</button>
+                <button onclick="showNumber(7)">7</button>
+                <button onclick="showNumber(8)">8</button>
+                <button onclick="showNumber(9)">9</button>
+                <button onclick="operator('x')">x</button>
+                <button onclick="showNumber(4)">4</button>
+                <button onclick="showNumber(5)">5</button>
+                <button onclick="showNumber(6)">6</button>
+                <button onclick="operator('minus')">–</button>
+                <button onclick="showNumber(1)">1</button>
+                <button onclick="showNumber(2)">2</button>
+                <button onclick="showNumber(3)">3</button>
+                <button onclick="operator('+')">+</button>
+                <button onclick="showNumber('±')">±</button>
+                <button onclick="showNumber(0)">0</button>
+                <button onclick="showNumber('.')">.</button>
+                <button onclick="equal('=')" style="background-color: rgb(158, 158, 158); color: rgb(62, 62, 62);">=</button>
+        </div>
+    </section>
+</body>
+<script src="./calculator.js"></script>
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* outline: 1px solid; */
+}
+section{
+    /* height: 100vh; */
+    /* height: fit-content; */
+    max-width: 24%;
+    min-width: 21rem;
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+    /* padding-bottom: 5px; */
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav p{
+    cursor: pointer;
+}
+.currency{
+    display: flex;
+    gap: 20px;
+}
+.minimize{
+    cursor: pointer;
+    width: 33%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+}
+.minimize:hover{
+    background-color:  rgb(95, 95, 95);
+}
+.cancel{
+    cursor: pointer;
+    height: 4vh;
+
+    display: flex;
+    justify-content: center;
+}
+.cancel:hover{
+    background-color:  rgb(95, 95, 95);
+}
+.cancels{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.split{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+
+}
+.split:hover{
+    background-color:  rgb(95, 95, 95);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem;
+    
+}
+.input1, .input2, .input3 {
+    text-align: left;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    height: 3rem;
+    margin-bottom: 10px;
+    background-color: rgb(39, 39, 39)
+}
+.input2:focus{
+    outline: none;
+}
+.allkeyboard{
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    flex-wrap: wrap;
+    
+}
+.allkeyboard button{
+    background-color:  rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 32.5%;
+    min-height: 8vh;
+    font-size: 15px;
+    /* font-weight: 700; */
+    /* margin-bottom: 4px; */
+
+}
+.allkeyboard button:hover{
+    background-color:  rgb(82, 82, 82);
+
+}
